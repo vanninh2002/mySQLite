@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             for (String hoten : hotens)
                 dataDAO.insertData(hoten);
         }
-
+        //list all ngay
         listAllrow(null);
     }
 
