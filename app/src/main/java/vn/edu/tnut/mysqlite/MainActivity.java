@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             for (String hoten : hotens)
                 dataDAO.insertData(hoten);
         }
+
+        listAllrow(null);
     }
 
     @Override
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //gọi dataDAO để insert
 
         dataDAO.insertData(hoten);
+        listAllrow(view);
     }
 
     public void listAllrow(View view) {
